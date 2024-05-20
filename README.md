@@ -41,7 +41,7 @@ resources:
 | **Name**     | **Type**      | **Requirement** | **Default**                       | **Description**                                                                               |
 |--------------|---------------|-----------------|-----------------------------------|-----------------------------------------------------------------------------------------------|
 | type         | string        | **Required**    |                                   | Card type must be `custom:ha-card-waze-travel-time`                                           |
-| header       | boolean       | Optional        | `true`                            | Hide/show route columns header                                                                |
+| headers      | boolean       | Optional        | `true`                            | Hide/show route columns header                                                                |
 | name         | string        | Optional        |                                   | Card name shown on top the routes                                                             |
 | unit         | string        | **Required**    |                                   | It can assume the values: `km`/`mi`
 | columns      | string list   | Optional        | `to, distance, duration, icon`    | Ordered list of columns to display. Valid values: `from, to, distance, duration, icon, route` |
@@ -61,7 +61,7 @@ resources:
 type: custom:mod-card
 card:
   type: custom:ha-card-waze-travel-time
-  header: false
+  headers: false
   name: "Route to..."
   unit: km
   columns:
